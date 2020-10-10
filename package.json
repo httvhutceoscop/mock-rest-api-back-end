@@ -1,0 +1,17 @@
+{
+  "name": "mock-rest-api",
+  "version": "1.0.0",
+  "description": "Mock a Rest API back-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generateData": "node ./server/generateData.js > ./server/database.json",
+    "server": "json-server --watch ./server/database.json"
+  },
+  "author": "vietnt",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^5.1.0",
+    "json-server": "^0.16.2"
+  }
+}
